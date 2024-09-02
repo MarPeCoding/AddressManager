@@ -1,6 +1,7 @@
 # AddressManager
 ***
 First experiences with REST API, Spring Boot and Vaadin, address management application
+
 Still work in progress
 
 ## Application layers
