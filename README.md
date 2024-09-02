@@ -4,9 +4,11 @@ First experiences with REST API, Spring Boot and Vaadin, address management appl
 
 Still work in progress
 
+
 ## Application layers
 ***
 Overview of the application layers: 
+
 
 
 UI:
@@ -16,7 +18,9 @@ MainView
 Presenter / Handler
 
 
+
 Client (will be implemented in the future)
+
 
 
 REST API:
@@ -28,7 +32,9 @@ Service / ServiceImpl
 Repository
 
 
+
 Database
+
 
 ## TO DO
 ***
@@ -45,6 +51,7 @@ TO DO:
 - Improving UI
   
 - Changing into multi-module project
+  
 
 ## Documentation
 To be continued...
