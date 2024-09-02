@@ -1,0 +1,11 @@
+H1 {
+    color: darkblue;
+}
+
+H2 {
+    color: dimgray;
+}
+
+vaadin-grid {
+    font-weight: bold;
+}
