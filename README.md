@@ -11,26 +11,19 @@ Overview of the application layers:
 
 
 
-UI:
+MainView (UI)
 
-MainView
-
-Presenter / Handler
-
+Presenter / Handler (UI)
 
 
 Client (will be implemented in the future)
 
 
+Controller (REST API)
 
-REST API:
+Service / ServiceImpl (REST API)
 
-Controller
-
-Service / ServiceImpl
-
-Repository
-
+Repository (REST API)
 
 
 Database
