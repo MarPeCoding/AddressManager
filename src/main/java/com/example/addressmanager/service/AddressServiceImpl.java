@@ -1,5 +1,6 @@
 package com.example.addressmanager.service;
 
+import com.example.addressmanager.exception.NoAddressFoundException;
 import com.example.addressmanager.model.Address;
 import com.example.addressmanager.repository.AddressRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,14 +23,12 @@ public class AddressServiceImpl implements AddressService {
     // Implementation of method create()
     @Override
     public Address create(Address address) {
-
         return this.addressRepository.save(address);
     }
 
     // Implementation of method readAll()
     @Override
     public List<Address> readAll() {
-
         return this.addressRepository.findAll();
     }
 
@@ -39,7 +38,7 @@ public class AddressServiceImpl implements AddressService {
         Optional<Address> addressId = this.addressRepository.findById(id);
 
         if (addressId.isEmpty()) {
-            throw new RuntimeException("No address found with id " + id);
+            throw new NoAddressFoundException("No address found with id " + id);
         }
         return addressId.get();
     }
@@ -50,12 +49,12 @@ public class AddressServiceImpl implements AddressService {
         Optional<Address> addressId = this.addressRepository.findById(id);
 
         if (addressId.isEmpty()) {
-            throw new RuntimeException("No adress found with id " + id);
+            throw new NoAddressFoundException("No adress found with id " + id);
         }
         else {
-            addressId.get().setStreetAndNumber(addressId.get().getStreetAndNumber());
-            addressId.get().setPostcode(addressId.get().getPostcode());
-            addressId.get().setCity(addressId.get().getCity());
+            addressId.get().setStreetAndNumber(address.getStreetAndNumber());
+            addressId.get().setPostcode(address.getPostcode());
+            addressId.get().setCity(address.getCity());
         }
 
         return this.addressRepository.save(addressId.get());
@@ -67,7 +66,7 @@ public class AddressServiceImpl implements AddressService {
         Optional<Address> addressId = this.addressRepository.findById(id);
 
         if (addressId.isEmpty()) {
-            throw new RuntimeException("No address found with id " + id);
+            throw new NoAddressFoundException("No address found with id " + id);
         }
         else {
             addressRepository.deleteById(id);

@@ -14,11 +14,11 @@ public class AddressManagerApplication {
 
 /*
 TO DO:
-- Debugging of method update()
 - Implementation of client
-- Implementation of custom exception handling
 - Implementation of unit tests
-- Improving UI
+- Improving UI with multiple views
 - Changing into multi-module project
+- Implementing security
+- Using JavaDoc in source code
  */
 

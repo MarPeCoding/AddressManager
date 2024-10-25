@@ -1,2 +1,12 @@
+package com.example.addressmanager.exception;
 
-// Will be implemented in the future, to replace generic RuntimeExceptions in class AddressServiceImpl
+public class NoAddressFoundException extends RuntimeException {
+
+    public NoAddressFoundException(String message) {
+        super(message);
+    }
+
+    public NoAddressFoundException(String message, Throwable cause) {
+        super(message, cause);
+    }
+}
