@@ -1,8 +1,8 @@
 # AddressManager
 ***
-First experiences with REST API, Spring Boot and Vaadin, address management application
+Practicing a microservices web application with REST-API, Spring Boot and Vaadin (address management application)
 
-Still work in progress
+Still work in progress, more features will be implemented
 
 
 ## Application layers
@@ -11,12 +11,12 @@ Overview of the application layers:
 
 
 
-MainView (UI)
+Views (UI)
 
 Presenter / Handler (UI)
 
 
-Client (will be implemented in the future)
+Client
 
 
 Controller (REST API)
@@ -33,17 +33,19 @@ Database
 ***
 TO DO:
 
-- Implementation of client
+- implement all crud operations from the backend (UI)
   
-- Implementation of unit tests
+- implement data binding and validation (UI)
   
-- Improving UI with multiple views
+- database migration to local database
   
-- Changing into multi-module project
+- implement unit tests
   
-- Implementing security
+- implement security and login
   
-- Using JavaDoc in source code
+- add source code comments
+  
+- use JavaDoc in source code
   
 
 ## Documentation
