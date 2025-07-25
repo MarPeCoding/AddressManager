@@ -2,10 +2,6 @@ H1 {
     color: darkred;
 }
 
-H2 {
-    color: darkgreen;
-}
-
 vaadin-grid {
     font-weight: bold;
 }

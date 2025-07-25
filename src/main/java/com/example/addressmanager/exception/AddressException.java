@@ -15,5 +15,4 @@ public class AddressException extends RuntimeException {
         this.throwable = throwable;
         this.status = status;
     }
-
 }

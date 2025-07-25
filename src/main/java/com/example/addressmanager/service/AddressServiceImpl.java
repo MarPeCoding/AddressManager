@@ -14,7 +14,7 @@ public class AddressServiceImpl implements AddressService {
     // Creating variable of type AddressRepository
     private final AddressRepository addressRepository;
 
-    // Dependency injection of AddressRepository
+    // Constructor with dependency injection of AddressRepository
     @Autowired
     public AddressServiceImpl(AddressRepository addressRepository) {
         this.addressRepository = addressRepository;

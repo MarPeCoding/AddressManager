@@ -24,8 +24,8 @@ public class Address {
 
     // Parameterized constructor
     public Address(String streetAndNumber, String postcode, String city){
-       this.streetAndNumber = streetAndNumber;
-       this.postcode = postcode;
-       this.city = city;
+        this.streetAndNumber = streetAndNumber;
+        this.postcode = postcode;
+        this.city = city;
     }
 }
