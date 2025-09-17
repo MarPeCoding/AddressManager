@@ -1,6 +1,6 @@
 # AddressManager
 ***
-Practicing a microservices web application with REST-API, Spring Boot and Vaadin (address management application)
+Practicing a web application with REST-API, Spring Boot and Vaadin (address management application)
 
 Still work in progress, more features will be implemented
 
@@ -43,7 +43,7 @@ TO DO:
   
 - implement security and login
   
-- add source code comments
+- add more source code comments
   
 - use JavaDoc in source code
   
